@@ -1,0 +1,104 @@
+*{
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body{
+   background: snow;
+}
+.main{
+   position: absolute;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   width: 350px;
+   height: 500px;
+   box-shadow: 0 0 17px 2px silver;
+}
+
+.main img{
+   height: 90px;
+   width: 100px;
+   border-radius: 50%;
+   position: relative;
+   top: -40px;
+   left: 50%;
+   transform: translateX(-50%);
+   box-shadow: 0 0 4px 1px silver;
+}
+.main > span{
+   display: block;
+   text-align: center;
+   font-size: 21px;
+   font-variant: small-caps;
+}
+
+.main p{
+    text-align: center;
+
+}
+
+.main p input[type="text"], .main p input[type="password"]{ 
+   border: 1px groove #0066ff;
+   padding: 10px; 
+   font-size: 15px;
+   outline: none;
+   width: 270px;
+   text-align: center;
+   font-family: monospace;
+   transition: width 0.6s ease-in;
+}
+
+.main p input{
+    padding: 10px;
+    border-radius: 7px 30px;
+}
+.main p input[type="submit"]{
+   border: 1px groove #e60073;
+   font-size: 15px;
+   outline: none;
+   width: 135px;
+   font-family: monospace;
+   transition: width 0.25s ease-in;
+}
+
+.main p input[type="text"]:focus, .main p input[type="password"]:focus{
+
+   border: 1px groove #0066ff;
+   padding: 10px;
+   font-size: 15px;
+   outline: none;
+   color: #800040;
+   width: 300px;
+   font-family: monospace;
+   transition: width 0.3s ease-out;
+   box-shadow: 0 0 10px 1px #bfbfbf;
+}
+
+.main p input[type="text"]{
+  text-transform: capitalize;
+}
+
+.main p input[type="submit"]:active{
+   border: 1px groove #00e600;
+   font-size: 15px;
+   outline: none;
+   width: 120px;
+   font-family: monospace;
+   font-weight: 650;
+   transition: width 0.25s ease-out;
+}
+
+.main #last-way{
+
+   position: absolute;
+   right: 15px;
+   bottom: 35px; 
+}
+
+/*
+p#credit{
+   font-family: Times New Roman;
+   position: absolute;
+   bottom: 15px;
+   right: 12px;
+} */
